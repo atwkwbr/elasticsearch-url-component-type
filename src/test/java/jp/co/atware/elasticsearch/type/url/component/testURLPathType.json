@@ -1,0 +1,19 @@
+{
+  "test": {
+    "properties": {
+      "path": {
+        "type": "url_path",
+        "fields": {
+          "self": {
+            "type": "string",
+            "store": true
+          },
+          "parents": {
+            "type": "string",
+            "store": true
+          }
+        }
+      }
+    }
+  }
+}

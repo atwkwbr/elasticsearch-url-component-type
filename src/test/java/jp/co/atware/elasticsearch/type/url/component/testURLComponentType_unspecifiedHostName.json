@@ -1,0 +1,37 @@
+{
+  "test": {
+    "properties": {
+      "url": {
+        "type": "url_component",
+        "hasHostName": false,
+        "fields": {
+          "raw": {
+            "type": "string",
+            "index": "not_analyzed",
+            "store": true
+          },
+          "protocol": {
+            "type": "string",
+            "store": true
+          },
+          "hostname": {
+            "type": "string",
+            "store": true
+          },
+          "port": {
+            "type": "integer",
+            "store": true
+          },
+          "path": {
+            "type": "string",
+            "store": true
+          },
+          "query": {
+            "type": "string",
+            "store": true
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "test": {
+    "properties": {
+      "url": {
+        "type": "url_component",
+        "hasHostName": true,
+        "fields": {
+          "raw": {
+            "type": "string",
+            "index": "not_analyzed",
+            "store": true
+          },
+          "protocol": {
+            "type": "string",
+            "index": "not_analyzed",
+            "store": true
+          },
+          "hostname": {
+            "type": "string",
+            "index": "not_analyzed",
+            "store": true
+          },
+          "port": {
+            "type": "integer",
+            "index": "not_analyzed",
+            "store": true
+          },
+          "path": {
+            "type": "url_path",
+            "index": "not_analyzed",
+            "store": true
+          },
+          "query": {
+            "type": "url_query",
+            "fields": {
+              "keyword": {
+                "type": "string",
+                "store": true
+              },
+              "p": {
+                "type": "long",
+                "store": true
+              },
+              "count": {
+                "type": "long",
+                "store": true
+              },
+              "sort": {
+                "type": "long",
+                "store": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
