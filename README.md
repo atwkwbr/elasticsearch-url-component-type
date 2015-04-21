@@ -1,2 +1,2 @@
 # elasticsearch-url-component-type
-Elasticsearch field type for URL component
+Custom field type for Elasticsearch to be used in the log analysis
